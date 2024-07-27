@@ -109,7 +109,7 @@ for generation in range(gen):
         fitness = fitness_func(objective_val)
         binary_seq_fitness = binary_fitness_dict(binary_seq,fitness)
         binary_seq = tournament(binary_seq,k,fitness,binary_seq_fitness)
-        #print(binary_seq)
+        print(binary_seq)
     else:
         
         index = [i for i in range(len(binary_seq)) if i%2==0 ]
